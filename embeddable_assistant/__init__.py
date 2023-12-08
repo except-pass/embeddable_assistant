@@ -1,9 +1,12 @@
 import os
 import time
+import logging
 from typing import List, Dict
 
 from openai import OpenAI
 import streamlit as st
+
+logger = logging.getLogger()
 
 def extract_text(messages:List):
     text = []
